@@ -1,0 +1,26 @@
+Questão 20 — Uma loja só pode confirmar uma venda quando há unidades suficientes em estoque. Crie um programa em C que leia a quantidade disponível e a quantidade solicitada pelo cliente. Se o pedido puder ser atendido, mostre “Venda confirmada” e o estoque restante. Caso contrário, mostre “Estoque insuficiente” e mantenha o estoque sem alteração. Considere estoque não negativo e pedido positivo, ambos inteiros.
+Resultado:
+#include <stdio.h>
+
+int main() {
+    int estoque, pedido;
+
+    printf("Quantidade em estoque: ");
+    scanf("%d", &estoque);
+
+    printf("Quantidade solicitada: ");
+    scanf("%d", &pedido);
+
+    if(pedido <= estoque) {
+        estoque = estoque - pedido;
+        printf("Venda confirmada\n");
+        printf("Estoque restante: %d\n", estoque);
+    }
+    else {
+        printf("Estoque insuficiente\n");
+        printf("Estoque atual: %d\n", estoque);
+    }
+    
+    return 0;
+}
+
