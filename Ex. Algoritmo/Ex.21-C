@@ -1,0 +1,29 @@
+
+Questão 21 — Uma pessoa deseja acompanhar seu orçamento do mês. Crie um programa em C que leia o valor planejado para os gastos e o valor efetivamente gasto. Se o gasto ficar abaixo do orçamento, exiba quanto ainda está disponível. Se for igual, mostre “Orçamento totalmente utilizado”. Se ultrapassar o orçamento, exiba quanto foi gasto a mais. Considere valores não negativos.
+Resultado:
+#include <stdio.h>
+
+int main() {
+    double orcamento, gasto;
+
+    printf("Valor planejado:R$ ");
+    scanf("%lf", &orcamento);
+
+    printf("Valor gasto:R$ ");
+    scanf("%lf", &gasto);
+
+    if (gasto < orcamento){
+        printf("Valor ainda disponivel: R$ %.2f\n", orcamento - gasto);
+    } 
+    
+     else if (gasto == orcamento){
+         printf("Orcamento esgotado\n");
+     }
+    else{
+        printf("Passou do orcamento: R$ %.2f\n", gasto - orcamento);
+    }
+    
+    return 0;
+}
+
+
