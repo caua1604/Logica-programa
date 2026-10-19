@@ -1,0 +1,26 @@
+Questão 18 — Uma loja concede 10% de desconto em compras a partir de R$ 200,00. Compras abaixo desse valor não recebem desconto. Crie um programa em C que leia o valor da compra, calcule o desconto aplicável e exiba tanto o desconto quanto o total a pagar. Uma compra de exatamente R$ 200,00 deve receber o benefício.
+Resultado: 
+
+#include <stdio.h>
+
+int main() {
+
+    double valor, desconto, total;
+
+    printf("Digite o valor da compra: R$ ");
+        scanf("%lf", &valor);
+
+    if (valor >= 200.0) {
+        desconto = valor * 0.10;
+    }
+    else {
+        desconto = 0.0;
+    }
+
+    total = valor - desconto;
+
+    printf("Desconto: R$ %.2f\n",desconto);
+    printf("Total a pagar: R$ %.2f\n", total);
+
+    return 0;
+}
