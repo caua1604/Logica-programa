@@ -1,0 +1,28 @@
+
+Questão 19 — Um jogo classifica a pontuação de cada participante em quatro faixas: abaixo de 1.000 pontos, Bronze; de 1.000 até 1.499, Prata; de 1.500 até 1.999, Ouro; a partir de 2.000, Diamante. Crie um programa em C com if, else if e else que leia uma pontuação inteira não negativa e mostre apenas a classificação correspondente.
+Resultado:
+#include <stdio.h>
+
+int main() {
+
+    int pontuacao;
+
+    printf("Digite a pontuacao: ");
+    scanf("%d", &pontuacao);
+
+    if (pontuacao < 1000) {
+        printf("Bronze\n");
+    }
+    else if (pontuacao < 1500) {
+        printf("Prata\n");
+    }
+     else if (pontuacao < 2000) {
+        printf("Ouro\n");
+    }
+    else {
+        printf("Diamante\n");
+    }
+
+    return 0;
+}
+
