@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int cadastro, autorizado;
+
+ printf("Cadastro ativo? (1 para sim, 0 para nao): \n");
+     scanf("%d", &cadastro);
+      printf("Possui autorizacao? (1 para sim, 0 para nao): \n");
+     scanf("%d", &autorizado);
+
+         if (cadastro == 1 && autorizado == 1 ) {
+         printf("Retirada permitida\n");
+         }
+        else{
+        printf("Retirada não permitida\n");   
+        }
+    return 0;
+}
