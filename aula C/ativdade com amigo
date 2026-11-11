@@ -1,0 +1,42 @@
+// Online C compiler (editor)
+// Write and run C online using this editor.
+
+#include <stdio.h>
+
+int main() {
+int numero1;
+int numero2;
+char operador;
+float resultado;    
+
+    printf("Bem-vindo a Calculadora \n");
+
+    
+    printf("Digite o Primeiro valor: ");
+    scanf("%d", &numero1);
+
+    printf("Escolha Seu Operador + | - | % | * |: ");
+    scanf(" %c", &operador);
+    
+    printf("fale seu  segundo numero: ");
+    scanf("%d", &numero2);
+
+
+switch (operador) {
+    case '+' : resultado = numero1 + numero2; 
+    printf("Resultado é esse: %.2f ", resultado);
+    break;
+    case '*' : resultado = numero1 * numero2;
+        printf("Resultado é esse: %.2f ", resultado);
+    break;
+    case '-' : resultado = numero1 - numero2;
+        printf("Resultado é esse: %.2f ", resultado);
+    break;
+    case '%' : resultado = numero1 / numero2;
+        printf("Resultado é esse: %.2f \n", resultado);
+    break;
+    default : printf("error");
+    break;
+}    
+    
+}
