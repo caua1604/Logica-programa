@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+struct Computador {
+    char nome[50];
+    int memoria;
+    char cor[20];
+    float preco;
+};    
+
+int main (){
+    struct Computador computador = {"Dell",16,"Preto",1999.99f};
+    printf("Nome computador:%s\nMemória:%dGb\nCor:%s\nPreço:R$%.2f", computador.nome, computador.memoria,computador.cor, computador.preco);
+}
