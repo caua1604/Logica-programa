@@ -1,0 +1,13 @@
+#include <stdio.h>
+void mais(int *numero) {
+*numero = *numero + 10;
+}
+int main() {
+    int valor;
+    printf("Digite um numero:");
+    scanf("%d",&valor);
+    printf("Valor digitado:%d\n",valor);
+    mais(&valor);
+    printf("Valor + 10:%d",valor);
+    return 0;
+}
